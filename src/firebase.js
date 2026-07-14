@@ -5,21 +5,24 @@
 // 4. Enable "Firestore Database" and "Storage" from the left sidebar
 //    (Build > Firestore Database > Create database, and Build > Storage > Get started).
 // See the README for full step-by-step instructions.
-
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getStorage } from "firebase/storage";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyBpf21PXIicMMdnXL2WKQHlYrVrNgG8P70",
+  authDomain: "amaradio-stu.firebaseapp.com",
+  projectId: "amaradio-stu",
+  storageBucket: "amaradio-stu.firebasestorage.app",
+  messagingSenderId: "839087336494",
+  appId: "1:839087336494:web:553e540701dd36388f83bf",
+  measurementId: "G-PYQ71CYYDM"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-export const db = getFirestore(app);
-export const storage = getStorage(app);
+const analytics = getAnalytics(app);

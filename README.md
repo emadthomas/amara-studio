@@ -5,7 +5,7 @@ A single-page e-commerce site (storefront + password-protected admin panel) buil
 ## 1. Set up your free Firebase backend (do this first)
 
 1. Go to **[console.firebase.google.com](https://console.firebase.google.com)** and sign in with a Google account.
-2. Click **Add project**, give it a name (e.g. `amara-studio`), and finish the setup wizard (you can skip Google Analytics).
+2. Click **Add project**, give it a name (e.g. `amaradio-stu`), and finish the setup wizard (you can skip Google Analytics).
 3. Once inside the project, click the **`</>`** (Web) icon to register a web app. Give it a nickname and click **Register app**. Firebase shows you a `firebaseConfig` object — keep this tab open, you'll copy values from it in a minute.
 4. In the left sidebar, go to **Build > Firestore Database > Create database**. Choose a location close to you, and start in **production mode**.
 5. In the left sidebar, go to **Build > Storage > Get started**. Accept the defaults.
